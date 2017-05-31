@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<table border="solid">
+{% for t in products %}
+    <tr><td><a href="product/{{ t.0 }}">{{ t.0 }}</a></td>
+        <td>{{ t.1 }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>

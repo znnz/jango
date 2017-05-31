@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>{{ title }}</title>
+</head>
+<body>
+<h1>{{ title }}</h1>
+<table border="solid">
+<tr><th>Id</th><th>Name</th><th>Price</th>
+{% for t in products %}
+    <tr><td>{{ t.0 }}</td>
+        <td>{{ t.1 }}</td>
+        <td>{{ t.2 }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
